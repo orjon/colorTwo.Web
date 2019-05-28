@@ -1,34 +1,52 @@
 @import 'variables';
+@import 'flexLayouts';
+@import 'nav';
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  // user-select: none;
-  font-family: sans-serif;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   height: 100vh;
   width: 100vw;
-  border: $devborder solid green;
+  border: $devBorder solid blue;
   background-color: $background;
-  // overflow: hidden;
+  overflow: hidden;
+  @include flexRowCenter();
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  border: $devBorder solid blue;
+  background-color: $background;
+  overflow: hidden;
+  @include flexRowCenter();
 }
 
 
-.flexColCenter {
-  border: $devborder solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.centerCol {
+  width: 90vw;
+  height: 100vh;
+  @include flexColumnCenter();
+  border: $devBorder solid lime;
 }
 
-.centerWrapper {
+.top {
+  width: 90vw;
+  height: 100%;
+  @include flexColumnCenter();
+  border: $devBorder solid red;
+}
+
+.centerIndex {
   width: $imageWidth;
   height: $imageHeight;
-  border: $devborder solid cyan;
+  border: $devBorder solid cyan;
   text-align: center;
   position: relative;
 
@@ -38,30 +56,62 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    cursor:pointer;
   }
-
-  .timeFade {
-  }
-
   .hidden {
     display: none;
   }
-
 }
 
+.centerDetails {
+  width: $imageExplodeWidth;
+  height: $imageExplodeHeight;
+  border: $devBorder solid cyan;
+  text-align: center;
+  position: relative;
 
-.bottomWrapper {
-  position: absolute;
-  bottom: 0%;
-  border: $devborder solid cyan;
-  width: 100%;
-  color: $fontColor;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor:pointer;
+  }
+  .hidden {
+    display: none;
+  }
+}
+
+.bottom {
   padding-bottom: 2vh;
+  max-width: 600px;
+  @include flexColumnCenter();
+  border: $devBorder solid green;
+  color: $fontColor;
+  font-family: 'Montserrat', monospace;
+
+  .description {
+    border: $devBorder solid pink;
+    font-size: $fontSizeTimeLabel;
+    text-align: justify;
+    .descriptionHeader {
+
+      border: $devBorder solid pink;
+      border-bottom: 1px solid $fontColor;
+      padding-bottom: .25em;
+    }
+    .descriptionText {
+      padding-top: .25em;
+
+      border: $devBorder solid pink;
+    }
+  }
 }
 
 .text {
   width: 50vw;
-  border: $devborder solid pink;
+  border: $devBorder solid pink;
   font-size: $fontSizeTimeLabel;
   text-align: justify;
 }
