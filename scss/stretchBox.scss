@@ -17,37 +17,6 @@ $fontSizeTimeLabel: 17px;
 }
 
 
-
-// .bottom {
-//   padding-bottom: 1vh;
-//   max-width: 85%;
-//   @include flexColumnCenter();
-//   border: $devBorder solid green;
-//   color: $fontColor;
-//   font-family: 'Montserrat', monospace;
-//
-//   .description {
-//     border: $devBorder solid pink;
-//     font-size: $fontSizeTimeLabel;
-//     text-align: center;
-//
-//     .descriptionText {
-//       font-size: $fontSizeNormal;
-//       padding-top: .25em;
-//       border: $devBorder solid pink;
-//     }
-//
-//     .descriptionTech {
-//       font-family: sans-serif;
-//       font-size: $fontSizeSmall;
-//       padding-top: .25em;
-//       color: $textDim;
-//       border: $devBorder solid pink;
-//     }
-//   }
-// }
-
-
 .bottom {
   padding-bottom: 2vh;
   max-width: 600px;
