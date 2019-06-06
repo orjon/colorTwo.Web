@@ -60,11 +60,6 @@ nav {
     width: 29px;
     height: 29px;
     border-radius: 50%; }
-  nav .current {
-    background-color: black;
-    border: 2px solid black; }
-    nav .current img {
-      filter: invert(1); }
   nav .leftSide {
     display: flex;
     flex-direction: row;
@@ -84,7 +79,10 @@ nav {
     height: 23px;
     border: 0px solid orange; }
   nav .navText {
+    width: 100%;
     padding-left: 5px;
+    padding-right: 10px;
+    margin-right: 0px;
     vertical-align: center;
     font-size: 17px;
     border: 0px solid magenta; }
@@ -96,18 +94,15 @@ nav {
       height: 39px;
       border-radius: 50%;
       border: 2px solid rgba(0, 0, 0, 0); }
-      nav a:hover {
-        background-color: black;
-        border: 2px solid black; }
-        nav a:hover img {
-          filter: invert(1); }
     nav .navIcon {
       width: 35px;
       height: 29px;
       border: 0px solid orange; }
     nav .navText {
       padding-left: 15px;
-      font-size: 25px; } }
+      font-size: 25px; }
+    nav .aboutMe {
+      text-align: right; } }
 
 .navArrows .navArrow {
   height: 5vh;
@@ -261,7 +256,6 @@ body::-webkit-scrollbar {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    cursor: pointer;
     border: 0px solid lime; }
   .center .hidden {
     display: none; }
