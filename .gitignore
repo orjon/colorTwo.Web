@@ -1,4 +1,2 @@
-source/
-*.psd
-*.ai
-.DS_Store
+/source
+
