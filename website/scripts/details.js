@@ -1,13 +1,12 @@
 $(() => {
 
-  const fadeOut= 1500
+  const fadeOut= 1000
   const fadeIn= 500
-  const animSpeed = 3500
+  const animSpeed = 2500
 
   $('.explode > div:gt(0)').hide()
 
-
-  function explode() {
+  explode = () => {
     $('.explode > div:first')
       .fadeOut(fadeOut)
       .next()

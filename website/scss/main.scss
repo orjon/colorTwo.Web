@@ -68,7 +68,7 @@ body::-webkit-scrollbar {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    // cursor:pointer;
+    cursor:pointer;
     border: $devBorder solid lime;
   }
 
