@@ -1,6 +1,5 @@
 $(() => {
-
-
+  
   const animationSpeed= 2400
 
   $('.colorFade > div:gt(0)').hide()
